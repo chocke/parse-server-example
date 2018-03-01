@@ -23,10 +23,10 @@ var api = new ParseServer({
   auth: {
     accountkit: {
         module: 'Parse-Server-phone-number-auth',
-        appSecret: '3ab71fe891e2a883590f9f0a9ac10ab4'
+        appSecret: process.env.YOUR_APP_SECRET
     },
     facebook: {
-        appIds: "252184521635618"
+        appIds: process.env.FACEBOOK_APP_ID
     }
 }
 });
