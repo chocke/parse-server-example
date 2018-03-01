@@ -20,13 +20,13 @@ var api = new ParseServer({
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   },
-  oauth: {
+  auth: {
     accountkit: {
         module: 'Parse-Server-phone-number-auth',
         appSecret: '3ab71fe891e2a883590f9f0a9ac10ab4'
     },
     facebook: {
-        appIds: ["252184521635618"]
+        appIds: "252184521635618"
     }
 }
 });
